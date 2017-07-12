@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 function timesTwo(input){
   return input * 2;
 }

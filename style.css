@@ -1,23 +1,32 @@
-#complaint {
-  text-indent: 1em;
+* {
+
+}
+
+p {
+
   letter-spacing: 0.005em;
   word-wrap: normal;
+  padding-top: 1em;
 }
 
 .maintext {
-  margin-right: 50%;
+  text-align: center;
 }
 
-.jshead {
-  color: red;
+.webtitle {
+  margin: 0;
+  padding: 0em 3em 0.5em 0em;
 }
 
-.topnavigation {
+ul.topnavigation {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px 16px 10px 1px;
 }
 
 li {
   display: inline;
+  float: left;
+  display: block;
+  padding: 4px 5px;
 }
