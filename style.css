@@ -1,5 +1,5 @@
 * {
-  font-family: "Calibri";
+
 }
 
 #webtitle {
@@ -7,13 +7,14 @@
   padding: 0;
   border: 1px dashed gray;
   color: #000;
-  clear: left;
+  font-family: 'Cinzel', serif;
 }
 
 .maintext {
   text-align: center;
   padding: 0;
   margin: 2px 0px;
+  font-family: 'Raleway', serif;
 }
 
 a#homelink {
@@ -32,19 +33,21 @@ a:visited {
   margin: 0;
   padding: 0;
   display: flex;
+  font-size: 20px;
 }
 
 .navlink {
   display: inline-flex;
-  padding: 2em 3em;
+  padding: 1em 2em;
   width: 50%;
   height: 20%;
   margin: 0;
-  font-size: auto;
+  font-size: inherit;
   text-transform: uppercase;
   justify-content: center;
   background-color: #8DB74D;
-  opacity: 0.74;
+  opacity: 0.65;
+  font-family: 'Zilla Slab', serif;
 }
 
 #splash {
@@ -54,6 +57,10 @@ a:visited {
   border-style: dashed;
   border-color: gray;
   clear: left;
+  background-image: url("/Users/demouser/WebCode/jcook8.github.io/resources/splash3.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #welcome {
