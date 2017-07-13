@@ -10,7 +10,7 @@
   font-family: 'Cinzel', serif;
 }
 
-.maintext {
+.header {
   text-align: center;
   padding: 0;
   margin: 2px 0px;
@@ -57,15 +57,17 @@ a:visited {
   border-style: dashed;
   border-color: gray;
   clear: left;
-  background-image: url("/Users/demouser/WebCode/jcook8.github.io/resources/splash3.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-#welcome {
+#splashtext {
   margin: 0;
   padding: 0;
   font-size: 5.5em;
   color: #000;
+}
+
+#splashback {
+  z-index: -1;
+  image-resolution: snap;
+  position: absolute;
 }
