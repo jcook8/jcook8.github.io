@@ -5,12 +5,11 @@
 #webtitle {
   margin: 0;
   padding: 0;
-  border: 1px dashed gray;
   color: #000;
   font-family: 'Cinzel', serif;
 }
 
-.header {
+.front-page-top {
   text-align: center;
   padding: 0;
   margin: 2px 0px;
@@ -27,6 +26,13 @@ a:link, a:visited {
 
 a:visited {
   color: inherit;
+}
+
+#site-navigation {
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .sitenav {
@@ -52,22 +58,32 @@ a:visited {
 
 #splash {
   margin: 0;
-  padding: 8em 0em;
-  border-width: 1px;
-  border-style: dashed;
-  border-color: gray;
-  clear: left;
+  padding: 15em 0;
+  position: relative;
 }
 
-#splashtext {
+#splash-text {
   margin: 0;
   padding: 0;
   font-size: 5.5em;
   color: #000;
+  z-index: 2;
+  position: relative;
 }
 
-#splashback {
-  z-index: -1;
-  image-resolution: snap;
+#splash-image {
   position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+#test {
+  text-align: center;
+  border: 1px dashed gray;
+  padding: 5em 4em;
+  font-size: 3em;
 }
