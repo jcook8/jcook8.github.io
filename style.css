@@ -1,23 +1,17 @@
-* {
-
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-#webtitle {
+body {
+  font-family: 'Raleway', serif;
+}
+
+#web-title {
   margin: 0;
   padding: 0;
   color: #000;
   font-family: 'Cinzel', serif;
-}
-
-.front-page-top {
-  text-align: center;
-  padding: 0;
-  margin: 2px 0px;
-  font-family: 'Raleway', serif;
-}
-
-a#homelink {
-
 }
 
 a:link, a:visited {
@@ -28,38 +22,40 @@ a:visited {
   color: inherit;
 }
 
-#site-navigation {
-  position: static;
-  top: 0;
+.site-navigation {
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 20px;
   left: 0;
-  z-index: 10;
+  top: 0;
+  position: static;
+  z-index: 3;
+  background-color: rgba(141, 183, 77, 0.65);
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-.sitenav {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 20px;
+#web-title {
+  font-size: 30px;
 }
 
 .navlink {
-  display: inline-flex;
-  padding: 1em 2em;
-  width: 50%;
-  height: 20%;
+  display: inline;
+  padding: 0 5%;
   margin: 0;
-  font-size: inherit;
   text-transform: uppercase;
-  justify-content: center;
-  background-color: #8DB74D;
-  opacity: 0.65;
+}
+
+ a.navlink {
+  opacity: 0.5;
   font-family: 'Zilla Slab', serif;
 }
 
-#splash {
-  margin: 0;
+.front-page-welcome {
+  text-align: center;
   padding: 15em 0;
-  position: relative;
+  margin: 2px 0px;
 }
 
 #splash-text {
@@ -71,7 +67,7 @@ a:visited {
   position: relative;
 }
 
-#splash-image {
+#home-page-background-image {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -81,9 +77,25 @@ a:visited {
   opacity: 0.6;
 }
 
-#test {
-  text-align: center;
-  border: 1px dashed gray;
-  padding: 5em 4em;
-  font-size: 3em;
+#add-comment-page-div-form {
+  padding-left: 1em;
+}
+
+#submit-button-div {
+  padding: 0.68em 0;
+}
+
+.compose-comment {
+  font-size: 0.9em;
+}
+
+#submit-button {
+  font-family: 'Zilla Slab', serif;
+  font-size: 0.9em;
+  padding: 0.68em 0.8em;
+  margin: 0;
+  background-color: rgb(69, 138, 249);
+  justify-content: center;
+  left: 0;
+  cursor: pointer;
 }
