@@ -78,7 +78,7 @@ a:visited {
 }
 
 .comment-system-container {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .compose-comment {
@@ -98,4 +98,13 @@ a:visited {
   justify-content: center;
   left: 0;
   cursor: pointer;
+}
+
+div.insert-comments h3 {
+  margin: 0;
+  padding-top: 0.85em;
+}
+
+div.insert-comments p {
+  margin: 0;
 }
