@@ -1,49 +1,45 @@
 $('a.navlink').mouseenter( function (){$(this).fadeTo(100, 1)}).mouseleave( function (){$(this).fadeTo(200, 0.5)});
 $('#submit-button').click(submitButtonFadeAnimation);
 
-// mouseenter( function (){$(this).fadeTo(100, 1)}).mouseleave( function (){$(this).fadeTo(200, 0.8)})
 function submitButtonFadeAnimation(){
   $('#submit-button').fadeTo(50, 0.65);
   $('#submit-button').fadeTo(100, 1);
 }
 
-function placeCommentOnPage(){
-  $('#insert-comments').append().html("<section class='new-comment'><h3 class='new-comment-username'></h3><p class='new-comment-content'></p></section>");
+function placeCommentBoxOnPage(){
+  $("<section class='new-comment'><h3 class='new-comment-username'></h3><p class='new-comment-content'></p></section>").appendTo('#insert-comments');
 }
 
+var commentNumberArray = [0];
 function changeClass(){
-  $('.new-comment').removeClass().addClass('listed-comment');
-  $('.new-comment-username').removeClass().addClass('listed-comment-username');
-  $('.new-comment-content').removeClass().addClass('listed-comment-content');
-  for (var i = 0; i < $('listed-comment').length; i++){
-    return i;
+  if ( $('.new-comment')[0]){
+    $('.new-comment').removeClass().addClass('new-comment' + "-" + (commentNumberArray.length - 1));
+    commentNumberArray.push(0);
   }
-  $('.listed-comment').removeClass().addClass('listed-comment' + "-" + String(i));
-}
-
-function changeClassIncrementationSoThatNewCommentsGetTheirOwnSection(){
-  for (var i = 0; i < $('.listed-comment').length; i++){
-//    var newCommentClassNumber = "listed-comment" + '-' + String(i);
-//    var newCommentClass = "'" + newCommentClassNumber + "'";
-    return i;
+  if ( $('.new-comment-username')[0]){
+    $('.new-comment-username').removeClass().addClass('new-comment-username' + "-" + (commentNumberArray.length - 1));
+    commentNumberArray.push(0);
+  }
+  if ( $('.new-comment-content')[0]){
+    $('.new-comment-content').removeClass().addClass('new-comment-content' + "-" + (commentNumberArray.length - 1));
+    commentNumberArray.push(0);
   }
 }
 
 function addComment(){
-  var newUserName = $('input.compose-comment').val();
-  var newUserComment = $('textarea.compose-comment').val();
-  placeCommentOnPage();
+  var newUserName = $('#user-name-input').val();
+  var newUserComment = $('#user-comment-input').val();
+  placeCommentBoxOnPage();
+  $('.new-comment-username').append(newUserName);
+  $('.new-comment-content').append(newUserComment);
   changeClass();
-  changeClassIncrementationSoThatNewCommentsGetTheirOwnSection();
-  $('.listed-comment-username').append(newUserName);
-  $('.listed-comment-content').append(newUserComment);
 }
 
 function handleKey(event){
   if (event.keyCode == 13) {
     addComment();
     submitButtonFadeAnimation();
-    event.preventDefault();
+    return false;
   }
 }
 

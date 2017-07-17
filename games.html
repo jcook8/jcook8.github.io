@@ -13,16 +13,16 @@
       <a href='games.html' class='navlink' id='games-nav'>Games</a>
       <a href='gallery.html' class='navlink' id='gallery-nav'>Gallery</a>
     </nav>
-    <h2 id="comment-header">Comments</h2>
-  <!--  <h3 id="comment-section-username"></h3>
-    <p id="comment-section-container"></p> -->
-    <div id="insert-comments"></div>
-    <div id="add-comment-page-div">
-      <form name="commentSectionAdd" id="add-comment-page-div-form">
-        <input class="compose-comment" type="text" placeholder="Add Screen Name..."><br>
-        <textarea class="compose-comment" type="text" placeholder="Add a comment..." rows="5" cols="50"></textarea><br>
-        <div id="submit-button-div"><span id="submit-button">Submit</span></div>
-      </form>
+    <div class="comment-system-container">
+      <h2 id="comment-header">Comments</h2>
+      <div id="add-comment-page-div">
+        <form name="commentSectionAdd" id="add-comment-page-div-form">
+          <input id="user-name-input" class="compose-comment" type="text" placeholder="Add a name..."><br>
+          <textarea id="user-comment-input" class="compose-comment" rows="5" cols="50" type="text" placeholder="Add a comment..."></textarea><br>
+          <div class="submit-button-div"><span id="submit-button">Submit</span></div>
+        </form>
+      </div>
+      <div id="insert-comments"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>

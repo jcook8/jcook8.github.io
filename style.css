@@ -77,16 +77,16 @@ a:visited {
   opacity: 0.6;
 }
 
-#add-comment-page-div-form {
+.comment-system-container {
   padding-left: 1em;
-}
-
-#submit-button-div {
-  padding: 0.68em 0;
 }
 
 .compose-comment {
   font-size: 0.9em;
+}
+
+.submit-button-div {
+  padding: 0.68em 0;
 }
 
 #submit-button {
